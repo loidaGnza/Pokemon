@@ -1,0 +1,39 @@
+:root{
+  --color-red:red;
+
+}
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  color: #2e1b1b;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+}
+
+input{
+  outline: none;
+}
+

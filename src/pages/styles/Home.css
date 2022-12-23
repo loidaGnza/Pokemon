@@ -1,0 +1,23 @@
+
+.home{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: cal(100vh -120px);
+}
+
+.home__img{
+    padding: 10px;
+    max-width: 450px;
+}
+
+.home__subtitle{
+    color:var(--color-red);
+    margin-right: 50px;
+    top: 100%;
+}
+
+.home__text{
+    margin-top: 0;
+}
