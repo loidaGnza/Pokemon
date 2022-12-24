@@ -15,7 +15,7 @@ body {
   margin: 0;
   font-family: 'Barlow', sans-serif;
   font-family: 'Hanken Grotesk', sans-serif;
-  display: flex;
+ /* display: flex; */
   place-items: center;
   min-height: 100vh;
   background-color: #f4f4f4;

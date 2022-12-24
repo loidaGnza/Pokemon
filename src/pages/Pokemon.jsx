@@ -55,7 +55,7 @@ useEffect(() => {
         <h4 className='pokemonId__skills-title'>Abilities</h4>
         <div className='pokemonId__info-data'>
           {
-            dataPokemon?.abilities.map(ability => <p  className='pokemonId__info-value' key={ability.ability.url}>{ability.ability.name}</p>)
+            dataPokemon?.abilities.map(ability => <p  className='pokemonId__info-value' key={ability.ability.name}>{ability.ability.name}</p>)
           }
         </div>
     

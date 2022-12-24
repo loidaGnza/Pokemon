@@ -1,6 +1,6 @@
 import React from 'react'
 import PokemonCard from './PokemonCard'
-import"./styles/ListPokemon.css"
+import"./styles/listPokemon.css"
 
 const ListPokemon = ({pokemons}) => {
   

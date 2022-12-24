@@ -3,3 +3,13 @@
     min-height: 100vh;
     padding-bottom: 120px;
 }
+
+.listPokemon{
+    display: grid;
+    gap: 20px;
+    grid-auto-rows: auto;
+    justify-items: center;
+    grid-template-columns: repeat(12, 1fr); /*repeat(auto-fill, minmax(280px, 1fr));*/
+    padding: 20px 0px;
+}
+
