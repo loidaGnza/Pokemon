@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const nameTrainerSlice= createSlice({
     name:'nameTrainer',
-    initialState:'',
+    initialState:localStorage.getItem('nameTrainer') ?? "",
     reducers:{
 setNameTrainerGlobal: (state,action) => action.payload
     }

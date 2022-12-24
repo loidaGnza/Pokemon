@@ -15,7 +15,7 @@ const getPercentBarProgress = (valueStat) =>{
 }
 
 useEffect(() => {
-  const URL = `https://pokeapi.com/api/v2/pokemon/${id}`
+  const URL = `https://pokeapi.co/api/v2/pokemon/${id}/`
   axios.get(URL)
   .then(res => setDataPokemon(res.data))
   .catch(err => console.log(err))
@@ -43,10 +43,10 @@ useEffect(() => {
           </section>
       <section className='pokemonId__info'>
         <div className='pokemonId__info-container'>
-        <h4 className='pokemonId__info-tittle'>Types</h4>
+        <h4 className='pokeCard__types-tittle'>Types</h4>
         <div className='pokemonId__info-data'>
           {
-            dataPokemon?.types.map(() => <p className={ `pokemonId__info-value bg-${type.type.name} ` }  key={type.type.name}>{type.type.name}</p>)
+            dataPokemon?.types.map(type => <p className={ `pokemonId__info-value bg-${type.type.name}`}  key={type.type.name}>{type.type.name}</p>)
           }
         </div>
         </div>
@@ -70,10 +70,10 @@ useEffect(() => {
       <div className='pokemonId__stat-'>
       <div className='pokemonId__stat-header'>
         <p className='pokemonId__stat-name'>{stat.stat.name}</p>
-        <p className='pokemonId__stat-value'>{stat.base.stat}/150</p>
+        <p className='pokemonId__stat-value'>{stat.base_stat}/150</p>
       </div>
       <div className='pokemonId__stat-bar'>
-        <div style={{width:getPercentBarProgress(stat.base.stat)}} className='pokemonId__stat-barProgress'></div>
+        <div style={{width:getPercentBarProgress(stat.base_stat)}} className='pokemonId__stat-barProgress'></div>
 </div>
   </div>
 

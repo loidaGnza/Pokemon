@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import ListPokemon from '../Componets/ListPokemon'
 import { paginationalLogic } from '../helpers/paginationalLogic'
+import "./styles/Pokedex.css"
 
 const Pokedex = () => {
 const [pokemons, setPokemons] = useState([])
@@ -111,7 +112,7 @@ setPokemonsFilter(newPokemons)
       <li onClick={handlePreviousPage}>{'<'}</li>
       <li onClick={handleFirstPage}>...</li>
       {
-        pageInBlock.map(pageInBlock => <li className={currentpage === pageInBlock ?'ctualPage' : ''} onClick={() => handleClickPage(pageInBlock)} key={pageInBlock}>{pageInBlock}</li>)
+        pageInBlock.map(pageInBlock => <li className={currentpage === pageInBlock ?'actualPage' : ''} onClick={() => handleClickPage(pageInBlock)} key={pageInBlock}>{pageInBlock}</li>)
       }
       <li onClick={handleLastPage}>...</li>
       <li onClick={handleNextPage}>{'>'}</li>

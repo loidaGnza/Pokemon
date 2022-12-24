@@ -70,7 +70,7 @@ font-weight: bold;
 }
 
 .pokemonId__info-container:first-child{
-  color: white;
+  color: rgb(8, 7, 7);
 }
 
 .pokemonId__skills-title{
@@ -85,7 +85,7 @@ font-weight: bold;
 }
 
 .pokemonId__info-value{
-    background: 1px solid gray;
+    background: 1px solid rgb(63, 55, 55);
     width: 100%;
     padding:4px;
     text-transform: capitalize;

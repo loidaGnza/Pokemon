@@ -8,10 +8,11 @@ const PokemonCard = ({pokemon}) => {
 const[dataPokemon,setDataPokemon]= useState()
 
 const navigate = useNavigate()
+
 const types =dataPokemon?.types.map(type =>type.type.name).join(''/'')
 
 const handleClickPokemon = () => {
-  navigate(`/pokemon/${dataPokemon?.id}`)
+  navigate(`/pokedex/${dataPokemon?.id}`)
 }
 
 
